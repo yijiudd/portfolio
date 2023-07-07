@@ -1,3 +1,28 @@
+.container {
+    position: relative;
+}
+
+
+
+.name {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 14px 16px;
+    background-color: #333;
+    z-index: 1;
+
+}
+
+
+.navbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
 .ul {
     list-style-type: none;
     margin: 0;
@@ -14,6 +39,28 @@
     flex-direction: row;
 }
 
+
 .ul li:hover {
     background-color: #111;
+}
+
+.home {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: red;
+}
+
+.about {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: yellow;
+}
+
+.contact {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: blue;
 }
