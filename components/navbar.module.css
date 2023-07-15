@@ -1,19 +1,16 @@
-
-
-
 .navbar {
     position: absolute;
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
 }
 
 .ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background: #3586ff;
     display: flex;
     justify-content: flex-end;
 }
@@ -26,8 +23,9 @@
 }
 
 
-.ul li:hover {
-    background-color: #111;
+.ul li:hover a {
+    /* background-color: #00FFFF; */
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
-
-

@@ -31,16 +31,22 @@ const HeroPage = () => {
         }
     }
 
-    return <div className={styles.home} id='home'>
-
-        <div><h1 className={styles.text1}>Hello!</h1></div>
-        <div><h2 className={styles.text2}>My name is Yi Jiu</h2></div>
-        <div>
-            <span className={`${styles.text} ${styles.firstText}`}>I am a</span>
-            <span className={`${styles.text} ${styles.secText}`}>{text}</span>
-            <span className={`${styles.text} ${styles.cursor}`}>|</span>
+    return <section className={styles.section}>
+        <div className={`${styles.air} ${styles.air1}`}></div>
+        <div className={`${styles.air} ${styles.air2}`}></div>
+        <div className={`${styles.air} ${styles.air3}`}></div>
+        <div className={`${styles.air} ${styles.air4}`}></div>
+        <div className={styles.home} id='home'>
+            <div><h1 className={styles.text1}>Hello!</h1></div>
+            <div><span className={styles.text2}>My name is </span><span className={styles.name}>Yi Jiu</span></div>
+            <div>
+                <span className={`${styles.text} ${styles.firstText}`}>I am a</span>
+                <span className={`${styles.text} ${styles.secText}`}>{text}</span>
+                <span className={`${styles.text} ${styles.cursor}`}>|</span>
+            </div>
         </div>
-    </div>
+    </section>
+
 }
 export default HeroPage
 
