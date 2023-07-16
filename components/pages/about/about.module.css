@@ -43,7 +43,7 @@
 
 .intro {
     color: #6c757d;
-    font-size: 38px;
+    font-size: 35px;
     margin: 10px 0 10px 0;
 }
 
@@ -72,17 +72,15 @@
 }
 
 .name {
-    margin: 20px;
-    width: 500px;
     color: black;
     display: flex;
     flex-wrap: wrap;
 }
 
 .name text {
-    margin: 20px;
+    margin: 15px;
     font: bold;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .name text:first-child {

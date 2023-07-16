@@ -21,7 +21,7 @@ const About = () => {
                 </div>
                 <div className={styles.name}>
                     <text>Hobbies:</text>
-                    <text>BasketBall  Movie  Anime  VideoGames</text>
+                    <text>BasketBall、Movie、Anime VideoGames</text>
                 </div>
             </div>
         </div>
