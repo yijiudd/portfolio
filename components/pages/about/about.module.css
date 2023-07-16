@@ -9,20 +9,59 @@
 
 }
 
+.moveLeft {
+    animation: move-left 1s ease-out;
+}
+
+.moveRight {
+    animation: move-right 1s ease-out;
+}
+
+
+.totalArea {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    display: flex;
+    max-width: 1140px;
+    height: 100%;
+}
+
 .contentArea {
-    width: 60%;
+    width: 70%;
     height: 844px;
     /* background-color: aqua; */
-    margin-left: 10%;
     display: flex;
     flex-direction: column;
 }
 
+@keyframes move-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .imageArea {
-    width: 40%;
-    margin-right: 10%;
+    width: 30%;
     height: 844px;
-    /* background-color: yellow; */
+}
+
+@keyframes move-right {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .introText {
@@ -36,14 +75,14 @@
 
 .helloText {
     color: black;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .intro {
     color: #6c757d;
-    font-size: 35px;
+    font-size: 25px;
     margin: 10px 0 10px 0;
 }
 
@@ -80,12 +119,12 @@
 .name text {
     margin: 15px;
     font: bold;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .name text:first-child {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .name text:last-child {
