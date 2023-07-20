@@ -84,20 +84,20 @@ section .air.air4 {
 
 .home .text {
     color: white;
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: 800;
     position: relative;
     z-index: 2;
 }
 
 .home .text1 {
-    font-size: 60px;
+    font-size: 5vw;
     color: white;
     z-index: 2;
 }
 
 .home .text2 {
-    font-size: 70px;
+    font-size: 5.5vw;
     color: white;
 }
 
@@ -108,12 +108,12 @@ section .air.air4 {
 
 .home .secText {
     font: bold;
-    font-size: 80px;
+    font-size: 6vw;
     color: #00FFFF;
 }
 
 .home .name {
-    font-size: 75px;
+    font-size: 5.8vw;
     font: bold;
     color: white;
 }

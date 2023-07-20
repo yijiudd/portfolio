@@ -31,12 +31,12 @@ const About = () => {
                     </div>
                     <div className={styles.name}>
                         <text>Hobbies:</text>
-                        <text>BasketBall、Movie、Anime VideoGames</text>
+                        <text>BasketBall、Movie、Anime、VideoGames</text>
                     </div>
                 </div>
             </div>
-            <div className={`${styles.imageArea} ${styles.moveRight}`}>
-                <Image src='/person.jpeg' alt='Personal Picture' width={400} height={844}></Image>
+            <div className={styles.moveRight}>
+                <img src='/person.jpeg' alt='Personal Picture' className={styles.imageArea}></img>
             </div>
         </div>
     </div >

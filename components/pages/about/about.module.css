@@ -19,17 +19,15 @@
 
 
 .totalArea {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
     display: flex;
-    max-width: 1140px;
+    max-width: 80vw;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .contentArea {
+    min-width: 50rem;
     width: 70%;
-    height: 844px;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
@@ -48,8 +46,11 @@
 }
 
 .imageArea {
+    /* min-width: 20rem;
     width: 30%;
-    height: 844px;
+    height: 844px; */
+    width: 20.5rem;
+    height: 44rem;
 }
 
 @keyframes move-right {
@@ -66,33 +67,33 @@
 
 .introText {
     position: relative;
-    padding-left: 70px;
+    padding-left: 4rem;
     color: black;
-    font-size: 20px;
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
 .helloText {
     color: black;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 1.875rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .intro {
     color: #6c757d;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 10px 0 10px 0;
+    max-width: 80vw;
 }
 
 .introText p {
-    font-size: 30px;
+    font-size: 1.25rem;
 }
 
 .introText::after {
     content: '';
-    width: 60px;
+    width: 3.8rem;
     height: 2px;
     background: #212529;
     position: absolute;
@@ -103,8 +104,10 @@
 .Area {
     /* margin-left: 5%;
     margin-right: 5%; */
-    margin-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 90%;
+    max-width: 80vw;
     height: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +120,8 @@
 }
 
 .name text {
-    margin: 15px;
+    /* margin: 15px; */
+    margin-right: 1rem;
     font: bold;
     font-size: 22px;
 }
