@@ -20,6 +20,11 @@
     font-size: 1.25rem;
 }
 
+.desc text {
+    font-size: 1rem;
+}
+
+
 .introText::after {
     content: '';
     width: 3.8rem;
@@ -39,18 +44,21 @@
 
 .left {
     width: 50%;
+    min-width: 20rem
 }
 
 .right {
     width: 50%;
+    min-width: 24rem
 }
 
 .education {
     margin: 0 2rem 2rem 0;
-    padding: 1rem;
+    padding: 2rem 1rem;
     border: 1px solid black;
 }
-.desc{
+
+.desc {
     margin-bottom: 0.25rem;
 }
 
@@ -80,4 +88,41 @@
     border-radius: 0.25rem;
     background-color: #6c757d;
     color: white;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.element {
+    width: 90%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.eleLeft {
+    position: absolute;
+    left: 0;
+}
+
+.eleRight {
+    position: absolute;
+    right: 0;
+}
+
+.progressBar {
+    width: 100%;
+    height: 0.1rem;
+    background: #eeeeee;
+    position: absolute;
+    top: 1.5rem;
+
+}
+
+.progress {
+    width: 75%;
+    background: #1d2124;
+    height: 100%;
 }
