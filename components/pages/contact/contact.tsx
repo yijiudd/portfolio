@@ -1,11 +1,36 @@
+"use client"
+import { useEffect, useRef, useState } from 'react'
 import styles from './contact.module.css'
+const contentAnim1 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay1} `]
+const contentAnim2 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay2} `]
+const contentAnim3 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay3} `]
+const contentAnim4 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay4} `]
 const Contact = () => {
-    return <div className={styles.contact} id='contact'>
+
+    const myRef = useRef(null)
+    const [count, setCount] = useState(0)
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                setCount((prevCount) => prevCount + 1)
+            }
+        }, { threshold: 0.5 });
+        if (myRef.current) {
+            observer.observe(myRef.current)
+
+        }
+        return () => {
+            if (myRef.current) {
+                observer.unobserve(myRef.current)
+            }
+        }
+    }, [])
+    return <div className={styles.contact} ref={myRef} >
         <div className={styles.introText}><p>Want to know more about me?</p></div>
         <h2> My Education and Work Experience</h2>
         <div className={styles.contentArea}>
             <div className={styles.left}>
-                <div className={styles.education}>
+                <div className={(count <= 1 ? contentAnim1[count] : `${styles.educationEnd}`)}>
                     <img src='/education.png'></img>
                     <h3>Education</h3>
                     <div className={styles.desc}>
@@ -19,7 +44,7 @@ const Contact = () => {
                         <span className={styles.badge}>Bachelor</span>
                     </div>
                 </div>
-                <div className={styles.education}>
+                <div className={(count <= 1 ? contentAnim2[count] : `${styles.educationEnd}`)}>
                     <img src='/award.png'></img>
                     <h3>Awards</h3>
                     <div className={styles.desc}>
@@ -37,7 +62,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className={styles.right}>
-                <div className={styles.education}>
+                <div className={(count <= 1 ? contentAnim3[count] : `${styles.educationEnd}`)}>
                     <img src='/tool.png'></img>
                     <h3>Skills</h3>
                     <div className={styles.elements}>
@@ -79,7 +104,7 @@ const Contact = () => {
                     </div>
 
                 </div>
-                <div className={styles.education}>
+                <div className={(count <= 1 ? contentAnim4[count] : `${styles.educationEnd}`)}>
                     <img src='/work.png'></img>
                     <h3>Work Experience</h3>
                     <div className={styles.desc}>
@@ -93,7 +118,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.contactDown}>
+        <div className={styles.contactDown} id='contact'>
             <div className={styles.introText}><p>Feel free to contact me!</p></div>
             <div className={styles.contactArea}>
                 <a href='https://twitter.com/yji21567477' className={styles.contactElement}>

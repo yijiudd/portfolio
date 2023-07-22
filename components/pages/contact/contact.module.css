@@ -56,6 +56,54 @@
     margin: 0 2rem 2rem 0;
     padding: 2rem 1rem;
     border: 1px solid black;
+    opacity: 0;
+}
+
+.educationEnd {
+    margin: 0 2rem 2rem 0;
+    padding: 2rem 1rem;
+    border: 1px solid black;
+}
+
+.educationAnim {
+    animation: fadeInUp 1000ms ease-out;
+    animation-fill-mode: forwards
+}
+
+.delay1 {
+    animation-delay: 200ms;
+}
+
+.delay2 {
+    animation-delay: 400ms;
+}
+
+.delay3 {
+    animation-delay: 600ms;
+}
+
+.delay4 {
+    animation-delay: 800ms;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.novisible {
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .desc {
