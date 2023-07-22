@@ -126,3 +126,27 @@
     background: #1d2124;
     height: 100%;
 }
+
+.contactDown {
+    margin-top: 8rem;
+    padding: 0;
+}
+
+.contactArea {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contactText {
+    color: #6c757d;
+    margin-left: 0.5rem;
+}
