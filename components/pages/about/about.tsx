@@ -12,7 +12,7 @@ const About = () => {
             if (entry.isIntersecting) {
                 setCount((prevCount) => prevCount + 1)
             }
-        }, { threshold: 0.5 });
+        }, { threshold: 0.3 });
         if (myRef.current) {
             observer.observe(myRef.current)
 
