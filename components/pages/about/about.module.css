@@ -33,6 +33,14 @@
     flex-direction: column;
 }
 
+.novisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
 @keyframes move-left {
     from {
         opacity: 0;
