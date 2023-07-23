@@ -29,3 +29,24 @@
     text-decoration: underline;
     text-underline-offset: 6px;
 }
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    /* font-size: 1rem; */
+}
+
+
+.pointer {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.6rem;
+}
+
+.label {
+    position: relative;
+}

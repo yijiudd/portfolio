@@ -1,11 +1,19 @@
-import Link from 'next/link';
+"use client"
+import Link from 'next-intl/link';
 import styles from './navbar.module.css'
 import HeroPage from './pages/heroPage/heroPage';
 import About from './pages/about/about';
 import Contact from './pages/contact/contact';
+import { usePathname, useRouter } from 'next-intl/client';
+import { useLocale } from 'next-intl';
+const switchObject = {
+    ja: 'English',
+    en: 'Japanese'
+}
 
 const Navbar = () => {
-
+    const pathname = usePathname();
+    const locale = useLocale()
     return (
         <div className={styles.navbar}>
             <nav>
@@ -25,6 +33,11 @@ const Navbar = () => {
                             Contact
                         </Link>
                     </li>
+                    <li>
+                        {locale === 'ja' ? <Link href="/" locale="en">Switch to English</Link> : <Link href="/" locale="ja">Switch to Janpanese</Link>}
+                    </li>
+
+
                 </ul>
             </nav></div>
 

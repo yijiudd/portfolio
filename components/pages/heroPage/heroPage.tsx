@@ -1,14 +1,24 @@
 "use client"
 import React, { useEffect, useLayoutEffect } from 'react'
 import styles from './heroPage.module.css'
+import { useLocale, useTranslations } from 'next-intl'
 
 const HeroPage = () => {
+    const t = useTranslations("heroPage")
+    const locale = useLocale()
     const [text, setText] = React.useState('')
     useLayoutEffect(() => {
         writeLoop()
 
     }, [])
-    const phrases = ["Front-end Engineer", "H5 Game Developer", "Graduate Student"]
+    let phrases: string[] = [];
+    const phrasesEn = ["Front-end Engineer", "H5 Game Developer", "Graduate Student"]
+    const phrasesJa = ["フロントエンドエンジニア", "H5 ゲーム開発者", "大学院生"]
+    if (locale === 'ja') {
+        phrases = phrasesJa
+    } else {
+        phrases = phrasesEn
+    }
     let sleepTime = 150;
     let curPhraseIndex = 0;
     const writeLoop = async () => {
@@ -37,10 +47,10 @@ const HeroPage = () => {
         <div className={`${styles.air} ${styles.air3}`}></div>
         <div className={`${styles.air} ${styles.air4}`}></div>
         <div className={styles.home} id='home'>
-            <div><h1 className={styles.text1}>Hello!</h1></div>
-            <div><span className={styles.text2}>My name is </span><span className={styles.name}>Yi Jiu</span></div>
+            <div><h1 className={styles.text1}>{t('Hello')}!</h1></div>
+            <div><span className={styles.text2}>{t('My name is')} </span><span className={styles.name}>{t('Yi Jiu')}</span></div>
             <div>
-                <span className={`${styles.text} ${styles.firstText}`}>I am a</span>
+                <span className={`${styles.text} ${styles.firstText}`}>{t('I am a')}</span>
                 <span className={`${styles.text} ${styles.secText}`}>{text}</span>
                 <span className={`${styles.text} ${styles.cursor}`}>|</span>
             </div>

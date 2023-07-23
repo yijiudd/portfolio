@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Navbar from '../../components/navbar'
-import HeroPage from '../../components/pages/heroPage/heroPage'
-import About from '../../components/pages/about/about'
-import Contact from '../../components/pages/contact/contact'
+
 import Head from 'next/head'
+import Navbar from '../../../components/navbar'
+import HeroPage from '../../../components/pages/heroPage/heroPage'
+import About from '../../../components/pages/about/about'
+import Contact from '../../../components/pages/contact/contact'
 
 
 export default function Home() {
