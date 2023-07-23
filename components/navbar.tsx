@@ -38,6 +38,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link href="/" locale={jumpTo}><text className={jaStyles}>Jp</text>/<text className={enStyles}>En</text></Link>
+                        
                     </li>
 
 
