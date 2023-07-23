@@ -14,6 +14,9 @@ const switchObject = {
 const Navbar = () => {
     const pathname = usePathname();
     const locale = useLocale()
+    const jumpTo = locale === 'ja' ? 'en' : 'ja'
+    const jaStyles = locale === 'ja' ? styles.heavy : ''
+    const enStyles = locale !== 'ja' ? styles.heavy : ''
     return (
         <div className={styles.navbar}>
             <nav>
@@ -34,7 +37,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        {locale === 'ja' ? <Link href="/" locale="en"><text className={styles.japan}>Jp</text>/<text>En</text></Link> : <Link href="/" locale="ja"><text >Jp</text>/<text className={styles.eng}>En</text></Link>}
+                        <Link href="/" locale={jumpTo}><text className={jaStyles}>Jp</text>/<text className={enStyles}>En</text></Link>
                     </li>
 
 
