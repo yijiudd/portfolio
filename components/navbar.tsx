@@ -34,7 +34,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        {locale === 'ja' ? <Link href="/" locale="en">Switch to English</Link> : <Link href="/" locale="ja">Switch to Janpanese</Link>}
+                        {locale === 'ja' ? <Link href="/" locale="en"><text className={styles.japan}>Jp</text>/<text>En</text></Link> : <Link href="/" locale="ja"><text >Jp</text>/<text className={styles.eng}>En</text></Link>}
                     </li>
 
 
