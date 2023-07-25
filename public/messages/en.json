@@ -7,5 +7,45 @@
         "Front-end Engineer": "Front-end Engineer",
         "H5 Game Developer": "H5 Game Developer",
         "Graduate Student": "Graduate Student"
+    },
+    "aboutPage": {
+        "Let me introduce myself": "Let me introduce myself",
+        "Hi! I am Yi Jiu": "Hi! I am Yi Jiu",
+        "introDetails": "I worked at ByteDance as a Front-end Engineer developing H5 games before,but now I am a CS graducate student in Waseda University. I am doing research on computer vision.I dream about working in game industry in Japan one day.",
+        "Name": "Name",
+        "Personality": "Personality",
+        "Yi Jiu": "Yi Jiu",
+        "BirthDay": "Birthday",
+        "Hobbies": "Hobbies",
+        "hobbiesDetails": "BasketBall、Movie、Anime、VideoGames"
+    },
+    "contactPage": {
+        "Want to know more about me": "Want to know more about me",
+        "My Education and Work Experience": "My Education and Work Experience",
+        "Education": "Education",
+        "Waseda University": "Waseda University",
+        "Master": "Master",
+        "Beijing University of Posts and Telecommunications": "Beijing University of Posts and Telecommunications",
+        "Bachelor": "Bachelor",
+        "Awards": "Awards",
+        "BUPT School-Level third-class Scholarship (top 30%)": "BUPT School-Level third-class Scholarship (top 30%)",
+        "China College Student Internet+ Competition Beijing third Price": "China College Student Internet+ Competition Beijing third Price",
+        "Beijing Electronic Design Competition Second Price": "Beijing Electronic Design Competition Second Price",
+        "English": "English",
+        "Coding": "Coding",
+        "Game Engine": "Game Engine",
+        "Computer Vision": "Computer Vision",
+        "Skills": "Skills",
+        "Work Experience": "Work Experience",
+        "ByteDance Front-end development Enginner": "ByteDance Front-end development Enginner",
+        "ByteDance Front-end development Intern": "ByteDance Front-end development Intern",
+        "Feel free to contact me": "Feel free to contact me"
+    },
+    "navbar": {
+        "Home": "Home",
+        "About": "About",
+        "Contact": "Contact",
+        "Jp": "Jp",
+        "En": "En"
     }
 }

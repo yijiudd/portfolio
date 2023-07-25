@@ -1,12 +1,13 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
 import styles from './contact.module.css'
+import { useTranslations } from 'next-intl'
 const contentAnim1 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay1} `]
 const contentAnim2 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay2} `]
 const contentAnim3 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay3} `]
 const contentAnim4 = [`${styles.education} ${styles.novisible}`, `${styles.education} ${styles.educationAnim} ${styles.delay4} `]
 const Contact = () => {
-
+    const t = useTranslations("contactPage")
     const myRef = useRef(null)
     const [count, setCount] = useState(0)
     useEffect(() => {
@@ -26,55 +27,55 @@ const Contact = () => {
         }
     }, [])
     return <div className={styles.contact} ref={myRef} >
-        <div className={styles.introText}><p>Want to know more about me?</p></div>
-        <h2> My Education and Work Experience</h2>
+        <div className={styles.introText}><p>{t('Want to know more about me')}?</p></div>
+        <h2> {t('My Education and Work Experience')}</h2>
         <div className={styles.contentArea}>
             <div className={styles.left}>
                 <div className={(count <= 1 ? contentAnim1[count] : `${styles.educationEnd}`)}>
                     <img src='/education.png'></img>
-                    <h3>Education</h3>
+                    <h3>{t('Education')}</h3>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2023</span>
-                        <text> Waseda University </text>
-                        <span className={styles.badge}>Master</span>
+                        <text> {t('Waseda University')} </text>
+                        <span className={styles.badge}>{t('Master')}</span>
                     </div>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2017</span>
-                        <text> Beijing University of Posts and Telecommunications </text>
-                        <span className={styles.badge}>Bachelor</span>
+                        <text> {t('Beijing University of Posts and Telecommunications')} </text>
+                        <span className={styles.badge}>{t('Bachelor')}</span>
                     </div>
                 </div>
                 <div className={(count <= 1 ? contentAnim2[count] : `${styles.educationEnd}`)}>
                     <img src='/award.png'></img>
-                    <h3>Awards</h3>
+                    <h3>{t('Awards')}</h3>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2017-2020</span>
-                        <text> BUPT School-Level third-class Scholarship (top 30%) </text>
+                        <text> {t('BUPT School-Level third-class Scholarship (top 30%)')} </text>
                     </div>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2020</span>
-                        <text> China College Student Internet+ Competition Beijing third Price</text>
+                        <text> {t('China College Student Internet+ Competition Beijing third Price')}</text>
                     </div>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2019</span>
-                        <text> Beijing Electronic Design Competition Second Price</text>
+                        <text> {t('Beijing Electronic Design Competition Second Price')}</text>
                     </div>
                 </div>
             </div>
             <div className={styles.right}>
                 <div className={(count <= 1 ? contentAnim3[count] : `${styles.educationEnd}`)}>
                     <img src='/tool.png'></img>
-                    <h3>Skills</h3>
+                    <h3>{t('Skills')}</h3>
                     <div className={styles.elements}>
                         <div className={styles.element}>
-                            <text className={styles.eleLeft}>English(TOEIC/TOEFL)</text>
+                            <text className={styles.eleLeft}>{t('English')}</text>
                             <text className={styles.eleRight}>80%</text>
                             <div className={styles.progressBar}>
                                 <div className={styles.progress} style={{ width: "80%" }}></div>
                             </div>
                         </div>
                         <div className={styles.element}>
-                            <text className={styles.eleLeft}>Coding(TS/C#)</text>
+                            <text className={styles.eleLeft}>{t('Coding')}(TS/C#)</text>
                             <text className={styles.eleRight}>80%</text>
                             <div className={styles.progressBar}>
                                 <div className={styles.progress} style={{ width: "80%" }}></div>
@@ -88,14 +89,14 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className={styles.element}>
-                            <text className={styles.eleLeft}>Game Engine(COCOS/Unity)</text>
+                            <text className={styles.eleLeft}>{t('Game Engine')}(COCOS/Unity)</text>
                             <text className={styles.eleRight}>75%</text>
                             <div className={styles.progressBar}>
                                 <div className={styles.progress} style={{ width: "75%" }}></div>
                             </div>
                         </div>
                         <div className={styles.element}>
-                            <text className={styles.eleLeft}>Computer Vision(ML/DL) </text>
+                            <text className={styles.eleLeft}>{t('Computer Vision')}(ML/DL) </text>
                             <text className={styles.eleRight}>20%</text>
                             <div className={styles.progressBar}>
                                 <div className={styles.progress} style={{ width: "20%" }}></div>
@@ -106,20 +107,20 @@ const Contact = () => {
                 </div>
                 <div className={(count <= 1 ? contentAnim4[count] : `${styles.educationEnd}`)}>
                     <img src='/work.png'></img>
-                    <h3>Work Experience</h3>
+                    <h3> {t('Work Experience')}</h3>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2021</span>
-                        <text> ByteDance Front-end development Enginner </text>
+                        <text> {t('ByteDance Front-end development Enginner')} </text>
                     </div>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2020</span>
-                        <text> ByteDance Front-end development Intern</text>
+                        <text>  {t('ByteDance Front-end development Intern')} </text>
                     </div>
                 </div>
             </div>
         </div>
         <div className={styles.contactDown} id='contact'>
-            <div className={styles.introText}><p>Feel free to contact me!</p></div>
+            <div className={styles.introText}><p>{t('Feel free to contact me')}!</p></div>
             <div className={styles.contactArea}>
                 <a href='https://twitter.com/yji21567477' className={styles.contactElement}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1DA1F2" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /> </svg>

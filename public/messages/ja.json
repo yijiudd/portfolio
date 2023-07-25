@@ -4,8 +4,48 @@
         "My name is": "私の名前は",
         "Yi Jiu": "イ ジウ",
         "I am a": "私は",
-        "Front-end Engineer":"フロントエンドエンジニア",
-        "H5 Game Developer":"H5 ゲーム開発者",
-        "Graduate Student":"大学院生"
+        "Front-end Engineer": "フロントエンドエンジニア",
+        "H5 Game Developer": "H5 ゲーム開発者",
+        "Graduate Student": "大学院生"
+    },
+    "aboutPage": {
+        "Let me introduce myself": "自己紹介をさせてください",
+        "Hi! I am Yi Jiu": "こんにちは！私はイ ジウです",
+        "introDetails": "以前はByteDanceでフロントエンドエンジニアとしてH5ゲームの開発をしていましたが、現在は早稲田大学のCS大学院生です。コンピュータビジョンの研究をしています。いつか日本のゲーム業界で働くことを夢見ています。",
+        "Name": "名前",
+        "Personality": "人格",
+        "Yi Jiu": "イ ジウ",
+        "BirthDay": "誕生日",
+        "Hobbies": "趣味",
+        "hobbiesDetails": "バスケットボール、映画、アニメ、ゲーム"
+    },
+    "contactPage": {
+        "Want to know more about me": "私のことをもっと知りたい",
+        "My Education and Work Experience": "学歴と職歴",
+        "Education": "学歴",
+        "Waseda University": "早稲田大学",
+        "Master": "修士",
+        "Beijing University of Posts and Telecommunications": "北京郵電大学",
+        "Bachelor": "学士",
+        "Awards": "受賞",
+        "BUPT School-Level third-class Scholarship (top 30%)": "北京郵電大学第三種奨学金(上位30%)",
+        "China College Student Internet+ Competition Beijing third Price": "中国大学生インターネット+コンペティション北京第三価格",
+        "Beijing Electronic Design Competition Second Price": "北京電子デザイン・コンペティション第2位",
+        "English": "英語",
+        "Coding": "コーディング",
+        "Game Engine": "ゲームエンジン",
+        "Computer Vision": "コンピュータビジョン",
+        "Skills": "技能",
+        "Work Experience": "職務経験",
+        "ByteDance Front-end development Enginner": "ByteDance フロントエンド開発エンジニア",
+        "ByteDance Front-end development Intern": "ByteDance フロントエンド開発インターン",
+        "Feel free to contact me": "お気軽にご連絡ください"
+    },
+    "navbar": {
+        "Home": "ホーム",
+        "About": "について",
+        "Contact": "お問い合わせ",
+        "Jp": "日本語",
+        "En":"英語"
     }
 }

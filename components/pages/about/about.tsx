@@ -2,11 +2,14 @@
 import Image from 'next/image'
 import styles from '../about/about.module.css'
 import { useEffect, useRef, useState } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
 const contentAreaAnim = [`${styles.contentArea} ${styles.novisible}`, `${styles.contentArea} ${styles.moveLeft}`]
 const imageAreaAnim = [`${styles.novisible}`, `${styles.moveRight}`]
 const About = () => {
     const myRef = useRef(null)
     const [count, setCount] = useState(0)
+    const t = useTranslations("aboutPage")
+    const locale = useLocale()
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
@@ -27,25 +30,25 @@ const About = () => {
     return <div className={styles.about} id='about' ref={myRef}>
         <div className={styles.totalArea}>
             <div className={(count <= 1 ? contentAreaAnim[count] : `${styles.contentArea} `)} >
-                <div className={styles.introText}><p>Let me introduce myself</p></div>
-                <h3 className={styles.helloText} >Hi! I am Yi Jiu</h3>
-                <p className={styles.intro}> I worked at ByteDance as a Front-end Engineer developing H5 games before,but now I am a CS graducate student in Waseda University. I am doing research on computer vision.I dream about working in game industry in Japan one day. </p>
+                <div className={styles.introText}><p>{t('Let me introduce myself')}</p></div>
+                <h3 className={styles.helloText} >{t('Hi! I am Yi Jiu')}</h3>
+                <p className={styles.intro}> {t('introDetails')} </p>
                 <div className={styles.Area}>
                     <div className={styles.name}>
-                        <text>Name:</text>
-                        <text>Yi Jiu</text>
+                        <text>{t('Name')}:</text>
+                        <text>{t('Yi Jiu')}</text>
                     </div>
                     <div className={styles.name}>
-                        <text>Personality:</text>
+                        <text>{t('Personality')}:</text>
                         <text>INFP</text>
                     </div>
                     <div className={styles.name}>
-                        <text>BrithDay:</text>
+                        <text>{t('BirthDay')}:</text>
                         <text>1999/9/19</text>
                     </div>
                     <div className={styles.name}>
-                        <text>Hobbies:</text>
-                        <text>BasketBall、Movie、Anime、VideoGames</text>
+                        <text>{t('Hobbies')}:</text>
+                        <text>{t('hobbiesDetails')}</text>
                     </div>
                 </div>
             </div>
