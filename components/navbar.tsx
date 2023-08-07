@@ -38,7 +38,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1LSC4ef6XhGEHwxlOppAldHWGRYXH-NOK/view?usp=drive_link" target='_blank'> {t('Resume')}</a>
+                        <a href="resume.pdf" target='_blank'> {t('Resume')}</a>
                     </li>
                     <li>
                         <Link href="/" locale={jumpTo}><text className={jaStyles}>{t('Jp')}</text>/<text className={enStyles}>{t('En')}</text></Link>
