@@ -198,3 +198,21 @@
     color: #6c757d;
     margin-left: 0.5rem;
 }
+
+.iconArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.headArea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iconArea img {
+    width: 3rem;
+    height: 3rem
+}

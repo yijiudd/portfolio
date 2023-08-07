@@ -32,7 +32,14 @@ const Contact = () => {
         <div className={styles.contentArea}>
             <div className={styles.left}>
                 <div className={(count <= 1 ? contentAnim1[count] : `${styles.educationEnd}`)}>
-                    <img src='/education.png'></img>
+                    <div className={styles.headArea}>
+                        <div>  <img src='/education.png'></img></div>
+                        <div className={styles.iconArea}>
+                            <img src='/waseda.png'></img>
+                            <img src='/bupt.png'></img>
+                        </div>
+                    </div>
+
                     <h3>{t('Education')}</h3>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2023</span>
@@ -64,7 +71,16 @@ const Contact = () => {
             </div>
             <div className={styles.right}>
                 <div className={(count <= 1 ? contentAnim3[count] : `${styles.educationEnd}`)}>
-                    <img src='/tool.png'></img>
+                    <div className={styles.headArea}>
+                        <div><img src='/tool.png'></img></div>
+                        <div className={styles.iconArea}>
+                            <img src='/typescript-64.png'></img>
+                            <img src='/C.png'></img>
+                            <img src='/react-64.png'></img>
+                            <img src='/unity-64.png'></img>
+                            <img src='/cocos.png'></img>
+                        </div>
+                    </div>
                     <h3>{t('Skills')}</h3>
                     <div className={styles.elements}>
                         <div className={styles.element}>
@@ -106,7 +122,12 @@ const Contact = () => {
 
                 </div>
                 <div className={(count <= 1 ? contentAnim4[count] : `${styles.educationEnd}`)}>
-                    <img src='/work.png'></img>
+                    <div className={styles.headArea}>
+                        <div> <img src='/work.png'></img></div>
+                        <div className={styles.iconArea}>
+                            <img src='/bytedance.png'></img>
+                        </div>
+                    </div>
                     <h3> {t('Work Experience')}</h3>
                     <div className={styles.desc}>
                         <span className={styles.badge}>2021</span>
