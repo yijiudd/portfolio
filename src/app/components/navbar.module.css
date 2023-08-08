@@ -30,6 +30,13 @@
     text-underline-offset: 6px;
 }
 
+.ul li:hover div {
+    /* background-color: #00FFFF; */
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
 .select {
     appearance: none;
     -webkit-appearance: none;
@@ -54,4 +61,3 @@
 .heavy {
     font-weight: 600;
 }
-
