@@ -35,6 +35,7 @@
     color: aqua;
     text-decoration: underline;
     text-underline-offset: 6px;
+    cursor: pointer
 }
 
 .select {
