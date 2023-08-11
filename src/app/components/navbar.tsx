@@ -42,8 +42,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#contact">
-                            {t('Contact')}
+                        <Link href="/posts">
+                            {t('Blogs')}
                         </Link>
                     </li>
                     <li>
